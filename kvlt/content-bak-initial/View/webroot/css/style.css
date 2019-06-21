@@ -1,0 +1,209 @@
+/* normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0;-webkit-font-smoothing: antialiased}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:0.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace, monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace, monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:0.35em 0.75em 0.625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+/********************************************
+
+GENERAL 
+
+********************************************/
+	
+	@font-face {font-family: 'Tartine';src: url('/fonts/Tartine-script-regular.eot');src: url('/fonts/Tartine-script-regular.eot?#iefix') format('embedded-opentype'),url('/fonts/Tartine-script-regular.woff2') format('woff2'),url('/fonts/TartineScriptRegular.woff') format('woff'),url('/fonts/TartineScriptRegular.ttf') format('truetype');}
+	
+	/* 
+		COLORS
+		
+			White: #ffffff
+
+		FONTS
+		
+			font-family: "futura-pt",sans-serif;
+
+		ANIMATION
+		
+			-webkit-
+			-moz-
+			animation: example 5s linear 2s infinite alternate;
+			
+			-webkit-
+			-moz-
+			animation-name: example;
+			animation-duration: 5s;
+			animation-timing-function: linear;
+			animation-delay: 2s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		
+			@-webkit-keyframes sticky {
+				0%   {opacity: 1;}
+				50%  {opacity: 0.2;}
+				100%   {opacity: 1;}
+			}
+
+			@keyframes sticky {
+				from {top: -80px}
+				to {top: 0;}
+			}
+
+			-webkit-
+			-moz-
+			transition: *property* *duration* *timing-function* *delay*;
+			
+			-webkit-
+			-moz-
+			-ms-
+			-o-
+			transform: translate(x,y) scale(x,y) rotate(angle);
+			
+			-webkit-
+			-moz-
+			-ms-
+			-o-
+			transform-origin: 50% 50%;
+		
+		FlexBox
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			
+			-webkit-box-pack:flex-start;
+			-ms-flex-pack:flex-start;
+			justify-content:flex-start;
+			
+			-webkit-box-align:center;
+			-ms-flex-align:center;
+			align-items:center;
+			
+		SVG	
+			start SVG images with data:image/svg+xml;charset=utf-8,
+			replace all " with  '
+			http://meyerweb.com/eric/tools/dencoder/ to encode the svg below
+			<svg xmlns='http://www.w3.org/2000/svg'><polygon fill='#ffffff' points='11.7,0 0,0 16.8,25.5 0,51 11.7,51 30,25.5 '/></svg>
+			ex: background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpolygon%20fill%3D%27%23ffffff%27%20points%3D%2711.7%2C0%200%2C0%2016.8%2C25.5%200%2C51%2011.7%2C51%2030%2C25.5%20%27%2F%3E%3C%2Fsvg%3E");
+			
+	*/
+	
+	html {
+		font-family: "proxima-nova",sans-serif;
+		font-size: 10px;
+	}
+	
+	html, body {
+		min-height: 100%;
+	}
+	
+	body {
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+	}
+
+	body,
+	h1, h2, h3, h4, h5, h6,
+	p, blockquote, pre,
+	dl, dd, ol, ul,
+	form, fieldset, legend,
+	table, th, td, caption,
+	hr {
+	  margin: 0;
+	  padding: 0; 
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+		cursor: pointer;
+	}
+	
+	img {
+		max-width: 100%;
+	}
+
+	.clearfix:after {
+		display: block;
+		content: '';
+		clear:both;
+	}
+
+	.container {
+		max-width: 1100px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 15px;
+		box-sizing: border-box;
+		position: relative;
+	}
+
+/***** Navigation *****/
+		
+	#nav_bar {
+
+	}
+	
+/***** Footer *****/	
+	
+	footer {
+
+	}
+
+	
+		
+/***** Modals *****/
+
+	/***** Normal Form *****/
+	
+	.modal {
+		display: none;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		color: white;
+		background-color: rgba(0, 0, 0, .95);
+		z-index: 100;
+		box-sizing: border-box;
+		padding: 15px 0;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+		
+		
+/***** Buttons *****/
+	
+	/*Same size buttons*/
+	.btn {
+		border: none;
+		font-size: 1.6em;
+		line-height: 1em;
+		cursor: pointer;
+		text-decoration: none; 
+		border-radius: 0px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		height: 30px;
+		width: 140px;
+		padding: 0;
+	}
+	
+	/*Dynamic size buttons*/
+	.btn {
+		border: none;
+		font-size: 1.6em;
+		cursor: pointer;
+		text-decoration: none; 
+		border-radius: 0px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		padding: 8px 15px 7px;
+	}		
+	
+
+/********************************************
+
+HOME PAGE
+
+********************************************/
+
+/***** Hero *****/
+
+.home_1 {
+	
+}
+
